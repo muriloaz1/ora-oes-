@@ -2,7 +2,7 @@ import { Star, Heart, Cloud } from "lucide-react"
 
 export function CoverPage() {
   return (
-    <div className="relative min-h-screen bg-gradient-to-b from-sky-100 via-white to-pink-50 flex flex-col items-center justify-center p-8 print:h-screen print:break-after-page overflow-hidden">
+    <div className="relative min-h-screen bg-gradient-to-b from-sky-100 via-white to-pink-50 flex flex-col items-center justify-center p-4 md:p-8 print:h-screen print:break-after-page overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-10 left-10 text-yellow-300 animate-pulse">
         <Star className="w-8 h-8 fill-yellow-300" />
@@ -66,7 +66,7 @@ export function CoverPage() {
       </div>
 
       {/* Title */}
-      <h1 className="text-4xl md:text-5xl font-bold text-sky-600 text-center mb-4 font-serif tracking-wide">
+      <h1 className="text-3xl md:text-5xl font-bold text-sky-600 text-center mb-4 font-serif tracking-wide">
         36 Orações para Crianças
       </h1>
 

@@ -2,12 +2,12 @@ import { Heart, Star, Sparkles } from "lucide-react"
 
 export function IntroductionPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-sky-50 p-8 md:p-12 print:h-screen print:break-after-page">
+    <div className="min-h-screen bg-gradient-to-b from-white to-sky-50 p-4 md:p-12 print:h-screen print:break-after-page">
       <div className="max-w-2xl mx-auto">
         {/* Header */}
         <div className="flex items-center justify-center gap-2 mb-8">
           <Star className="w-6 h-6 fill-yellow-300 text-yellow-300" />
-          <h2 className="text-3xl font-bold text-sky-600 font-serif">Bem-vindos!</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-sky-600 font-serif">Bem-vindos!</h2>
           <Star className="w-6 h-6 fill-yellow-300 text-yellow-300" />
         </div>
 

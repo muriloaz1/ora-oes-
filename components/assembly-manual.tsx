@@ -45,7 +45,7 @@ export function AssemblyManual() {
   ]
 
   return (
-    <section className="w-[210mm] min-h-[297mm] mx-auto bg-gradient-to-b from-sky-50 to-white p-8 print:p-6 print-hide-on-prayers print-hide-on-labels">
+    <section className="w-full md:w-[210mm] min-h-screen md:min-h-[297mm] mx-auto bg-gradient-to-b from-sky-50 to-white p-4 md:p-8 print:p-6 print-hide-on-prayers print-hide-on-labels">
       {/* Header */}
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold text-sky-700 mb-2 font-serif">Manual de Montagem</h2>
@@ -58,7 +58,7 @@ export function AssemblyManual() {
       </div>
 
       {/* Steps Grid */}
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {steps.map((step) => (
           <div key={step.number} className={`${step.color} border-2 rounded-2xl p-5 relative`}>
             {/* Step Number Badge */}

@@ -231,8 +231,8 @@ export function PrayerCards() {
   return (
     <>
       {pages.map((pagePrayers, pageIndex) => (
-        <div key={pageIndex} className="min-h-screen bg-white p-6 print:h-screen print:break-after-page">
-          <div className="grid grid-cols-2 gap-4 h-full">
+        <div key={pageIndex} className="min-h-screen bg-white p-4 md:p-6 print:h-screen print:break-after-page">
+          <div className="grid grid-cols-1 md:grid-cols-2 print:grid-cols-2 gap-4 h-full">
             {pagePrayers.map((prayer) => (
               <PrayerCard key={prayer.id} prayer={prayer} />
             ))}
