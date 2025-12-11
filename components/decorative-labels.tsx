@@ -53,7 +53,7 @@ export function DecorativeLabels() {
   ]
 
   return (
-    <section className="w-[210mm] min-h-[297mm] mx-auto bg-white p-8 print:p-6 print-hide-on-prayers">
+    <section className="w-full md:w-[210mm] min-h-screen md:min-h-[297mm] mx-auto bg-white p-4 md:p-8 print:p-6 print-hide-on-prayers">
       {/* Header */}
       <div className="text-center mb-6 print-hide-on-labels">
         <h2 className="text-3xl font-bold text-purple-700 mb-2 font-serif">Rótulos Decorativos</h2>
@@ -70,7 +70,7 @@ export function DecorativeLabels() {
         <h3 className="text-sm font-bold text-gray-500 mb-3 uppercase tracking-wide print-hide-on-labels">
           Rótulos Grandes (para o corpo do vidro)
         </h3>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {labels.map((label, index) => (
             <div
               key={index}
@@ -100,7 +100,7 @@ export function DecorativeLabels() {
         <h3 className="text-sm font-bold text-gray-500 mb-3 uppercase tracking-wide print-hide-on-labels">
           Etiquetas Pequenas
         </h3>
-        <div className="grid grid-cols-4 gap-3">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           {smallLabels.map((label, index) => (
             <div key={index} className={`${label.color} border-2 border-dashed rounded-xl py-3 px-4 text-center`}>
               <span className="text-sm font-bold">{label.text}</span>
@@ -114,7 +114,7 @@ export function DecorativeLabels() {
         <h3 className="text-sm font-bold text-gray-500 mb-3 uppercase tracking-wide print-hide-on-labels">
           Círculos para Tampa
         </h3>
-        <div className="grid grid-cols-8 gap-3">
+        <div className="grid grid-cols-4 md:grid-cols-8 gap-3">
           {circleLabels.map((label, index) => (
             <div
               key={index}
@@ -131,8 +131,8 @@ export function DecorativeLabels() {
         <h3 className="text-sm font-bold text-gray-500 mb-3 uppercase tracking-wide print-hide-on-labels">
           Faixas Decorativas (para enrolar no vidro)
         </h3>
-        <div className="space-y-3">
-          <div className="h-12 bg-gradient-to-r from-pink-200 via-purple-200 to-sky-200 border-2 border-dashed border-pink-300 rounded-lg flex items-center justify-center gap-4">
+        <div className="space-y-3 overflow-x-auto pb-2">
+          <div className="h-12 bg-gradient-to-r from-pink-200 via-purple-200 to-sky-200 border-2 border-dashed border-pink-300 rounded-lg flex items-center justify-center gap-4 min-w-[600px] md:min-w-0">
             <span>✨</span>
             <span>💖</span>
             <span>🙏</span>
@@ -143,7 +143,7 @@ export function DecorativeLabels() {
             <span>💖</span>
             <span>✨</span>
           </div>
-          <div className="h-12 bg-gradient-to-r from-yellow-200 via-orange-200 to-pink-200 border-2 border-dashed border-yellow-300 rounded-lg flex items-center justify-center gap-4">
+          <div className="h-12 bg-gradient-to-r from-yellow-200 via-orange-200 to-pink-200 border-2 border-dashed border-yellow-300 rounded-lg flex items-center justify-center gap-4 min-w-[600px] md:min-w-0">
             <span>🌟</span>
             <span>🕊️</span>
             <span>☁️</span>
@@ -154,7 +154,7 @@ export function DecorativeLabels() {
             <span>🕊️</span>
             <span>☁️</span>
           </div>
-          <div className="h-12 bg-gradient-to-r from-sky-200 via-teal-200 to-green-200 border-2 border-dashed border-sky-300 rounded-lg flex items-center justify-center gap-4">
+          <div className="h-12 bg-gradient-to-r from-sky-200 via-teal-200 to-green-200 border-2 border-dashed border-sky-300 rounded-lg flex items-center justify-center gap-4 min-w-[600px] md:min-w-0">
             <span>🌈</span>
             <span>☀️</span>
             <span>🌸</span>
@@ -173,7 +173,7 @@ export function DecorativeLabels() {
         <h3 className="text-sm font-bold text-gray-500 mb-3 uppercase tracking-wide print-hide-on-labels">
           Tags para Pendurar
         </h3>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
             { text: "Com amor", color: "bg-pink-100 border-pink-300" },
             { text: "Para você", color: "bg-sky-100 border-sky-300" },
